@@ -4,15 +4,295 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
+    <!-- DiTes di Device pixel 4 API 30 -->
+
     <TextView
+        android:id="@+id/textAtas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        style="@style/TextAtas"
+        android:text="Hai, Binarian"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        style="@style/TextBawah"
+        android:text="mau makan apa hari ini?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textAtas" />
+
+    <ImageView
+        android:id="@+id/UserIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/user_Icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Profil User" />
+
+    <ImageView
+        android:id="@+id/keranjangIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/keranjang_icon"
+        app:layout_constraintEnd_toStartOf="@id/UserIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Keranjang Belanja" />
+
+    <LinearLayout
+        android:id="@+id/BannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/food_banner"
+        app:layout_constraintTop_toBottomOf="@id/textBawah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Baris Horizontal untuk iconIkon, textTeks, dan textTeks2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#66000000">
+
+            <!-- Ikon -->
+            <ImageView
+                android:id="@+id/iconIkon"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="16dp"
+                android:background="#b3ffffff"
+                android:src="@drawable/discount_icon" />
+
+            <!-- Teks 1 dan Teks 2 dalam orientasi vertikal -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <!-- Teks 1 -->
+                <TextView
+                    android:id="@+id/textTeks"
+                    style="@style/TextDalamBoxKecil"
+                    android:text="Diskon 50%!" />
+
+                <!-- Teks 2 -->
+                <TextView
+                    android:id="@+id/textTeks2"
+                    style="@style/TextDalamBoxKecil2"
+                    android:text="Pesan makanan lewat aplikasi dan dapatkan diskonmu" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/GridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:columnCount="4"
+        android:rowCount="1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BannerContainer">
+
+        <!-- Gambar 1 -->
+        <LinearLayout
+            style="@style/LinearLayoutStyle"
+            android:layout_row="0"
+            android:layout_column="0">
+
+            <ImageView
+                style="@style/ImageViewStyle"
+                android:src="@drawable/rice" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="Main Dish" />
+        </LinearLayout>
+
+        <!-- Gambar 2 -->
+        <LinearLayout
+            style="@style/LinearLayoutStyle"
+            android:layout_row="0"
+            android:layout_column="1">
+
+            <ImageView
+                style="@style/ImageViewStyle"
+                android:src="@drawable/appetizer" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="Appetizer" />
+        </LinearLayout>
+
+        <!-- Gambar 3 -->
+        <LinearLayout
+            style="@style/LinearLayoutStyle"
+            android:layout_row="0"
+            android:layout_column="2">
+
+            <ImageView
+                style="@style/ImageViewStyle"
+                android:src="@drawable/cupcake" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="Dessert" />
+        </LinearLayout>
+
+        <!-- Gambar 4 -->
+        <LinearLayout
+            style="@style/LinearLayoutStyle"
+            android:layout_row="0"
+            android:layout_column="3">
+
+            <ImageView
+                style="@style/ImageViewStyle"
+                android:src="@drawable/drinks" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="Drinks" />
+        </LinearLayout>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        style="@style/TextAtas"
+        android:text="List Menu Makanan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GridLayout" />
+
+    <ImageView
+        android:id="@+id/IconMenu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/menu_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GridLayout" />
+
+    <!-- Grid Layout kedua -->
+    <GridLayout
+        android:id="@+id/GridLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textJudul">
+
+        <!-- Gambar 1 -->
+        <LinearLayout
+            style="@style/LinearLayoutStyle2"
+            android:layout_row="0"
+            android:layout_column="0">
+
+            <ImageView
+                style="@style/ImageViewStyle2"
+                android:src="@drawable/ayamGoreng" />
+
+            <TextView
+                style="@style/NamaMakanan"
+                android:text="Ayam Goreng" />
+
+            <TextView
+                style="@style/Harga"
+                android:text="Rp. 50.000" />
+        </LinearLayout>
+
+        <!-- Gambar 2 -->
+        <LinearLayout
+            style="@style/LinearLayoutStyle2"
+            android:layout_row="0"
+            android:layout_column="1">
+
+            <ImageView
+                style="@style/ImageViewStyle2"
+                android:src="@drawable/sushiSalmon" />
+
+            <TextView
+                style="@style/NamaMakanan"
+                android:text="Sushi Salmon" />
+
+            <TextView
+                style="@style/Harga"
+                android:text="Rp. 45.000" />
+
+        </LinearLayout>
+
+        <!-- Gambar 3 -->
+        <LinearLayout
+            style="@style/LinearLayoutStyle2"
+            android:layout_row="1"
+            android:layout_column="0">
+
+            <ImageView
+                style="@style/ImageViewStyle2"
+                android:src="@drawable/spaghetti" />
+
+            <TextView
+                style="@style/NamaMakanan"
+                android:text="Spaghetti" />
+
+            <TextView
+                style="@style/Harga"
+                android:text="Rp. 35.000" />
+        </LinearLayout>
+
+        <!-- Gambar 4 -->
+        <LinearLayout
+            style="@style/LinearLayoutStyle2"
+            android:layout_row="1"
+            android:layout_column="1">
+
+            <ImageView
+                style="@style/ImageViewStyle2"
+                android:src="@drawable/cheeseBurger" />
+
+            <TextView
+                style="@style/NamaMakanan"
+                android:text="Cheese Burger" />
+            <TextView
+                style="@style/Harga"
+                android:text="Rp. 30.000" />
+        </LinearLayout>
+    </GridLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
