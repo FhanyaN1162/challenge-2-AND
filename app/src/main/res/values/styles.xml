@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/styles.xml -->
+<resources>
+
+    <!-- Style untuk teks atas -->
+    <style name="TextAtas">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!-- Style untuk teks di bawah -->
+    <style name="TextBawah">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!-- Style untuk teks dalam Banner kecil -->
+    <style name="TextDalamBoxKecil">
+        <item name="android:layout_width">181dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+    <style name="TextDalamBoxKecil2">
+        <item name="android:layout_width">181dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- Style untuk 4 box kecil -->
+    <!-- Style untuk ImageView -->
+    <style name="ImageViewStyle">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- Style untuk LinearLayout -->
+    <style name="LinearLayoutStyle">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">91dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- Style untuk TextView -->
+    <style name="TextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+    <!-- Style untuk 4 box menu besar -->
+    <!-- Style untuk ImageView -->
+    <style name="ImageViewStyle2">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- Gaya untuk LinearLayout -->
+    <style name="LinearLayoutStyle2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">210dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- Style untuk nama makanan -->
+    <style name="NamaMakanan">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">21dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+    </style>
+
+    <!-- Style untuk harga -->
+    <style name="Harga">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">11dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+    </style>
+
+</resources>
